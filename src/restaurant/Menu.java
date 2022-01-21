@@ -54,5 +54,15 @@ public class Menu {
         System.out.println(dish);
     }
 
+    public static void addMenuItem(ArrayList<MenuItem> menu, MenuItem dish){
+        menu.add(dish);
+    }
+
+    public static void removeMenuItem(ArrayList<MenuItem>menu,MenuItem dish){
+        menu.remove(dish);
+    }
+
+
+
 
 }

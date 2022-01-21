@@ -39,5 +39,30 @@ public class MenuItem {
         return this.isNew;
     }
 
+    public boolean equals(MenuItem toBeCompared){
+        if(toBeCompared == null){
+            return false;
+        }
+        if(toBeCompared == this){
+            return true;
+        }
+        if(toBeCompared.getClass() != getClass()){
+            return false;
+        }
+        return toBeCompared.getname().equals( this.getname());
 
+    }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        MenuItem menuItem = (MenuItem) o;
+//        return Objects.equals(name, menuItem.name) && Objects.equals(course, menuItem.course);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, course);
+//    }
 }
